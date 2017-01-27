@@ -1,6 +1,6 @@
 var xmlhttp, xmlDoc;
 xmlhttp = new XMLHttpRequest();
-xmlhttp.open("GET", "note.xml", false);
+xmlhttp.open("GET", "questions.xml", false);
 xmlhttp.send();
 xmlDoc = xmlhttp.responseXML;
 document.getElementById("title").innerHTML=
