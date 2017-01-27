@@ -1,11 +1,10 @@
-var xmlhttp, xmlDoc;
-xmlhttp = new XMLHttpRequest();
-xmlhttp.open("GET", "questions.xml", false);
-xmlhttp.send();
-xmlDoc = xmlhttp.responseXML;
-document.getElementById("title").innerHTML=
-xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
-document.getElementById("from").innerHTML=
-xmlDoc.getElementsByTagName("from")[0].childNodes[0].nodeValue;
-document.getElementById("message").innerHTML=
-xmlDoc.getElementsByTagName("body")[0].childNodes[0].nodeValue;
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+       // Typical action to be performed when the document is ready:
+       document.getElementById("examen").innerHTML = xmlhttp.responseText;
+    }
+};
+xhttp.open("GET", "questions.xml", true);
+xhttp.send();
+
