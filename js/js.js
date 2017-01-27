@@ -1,10 +1,14 @@
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-       // Typical action to be performed when the document is ready:
-       document.getElementById("examen").innerHTML = xmlhttp.responseText;
+        myFunction(this);
     }
 };
 xhttp.open("GET", "questions.xml", true);
 xhttp.send();
 
+function myFunction(xml) {
+    var xmlDoc = xml.responseXML;
+    document.getElementById("title").innerHTML =
+    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+}
