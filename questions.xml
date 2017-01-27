@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE questions SYSTEM "questions.dtd">
+<questions>
+	<question id="pregunta_001">
+		<type>radio</type>
+			<title>1.- ¿Qué etiqueta de HTML se emplea para definir una hoja de estilo interna?</title>
+				<option>a) css </option>
+				<option>b) link  </option>
+				<option>c) script </option>
+				<option>d) style </option>
+			<answer>3</answer>
+	</question>
+	
+	
+	<question id="pregunta_002">
+		<type>text</type>
+			<title>2.- JavaScript puede cambiar atributos HTML</title>
+			<answer>si</answer>
+	</question>
+	
+	
+	<question id="pregunta_003">
+		<type>checkbox</type>
+			<title>3.- ¿Qué significa XHTML?</title>
+				<option>a) Xml HyperText Markup Language </option>
+				<option>b) eXtensible HyperText Modeling Language</option>
+				<option>c) eXtensible HyperText Markup Language </option>
+			<answer>3</answer>
+	</question>
+	
+	
+	<question id="pregunta_004">
+		<type>select</type>
+			<title>4.- En un HTML ¿cuál es lugar correcto para definir una hoja de estilo externa</title>
+				<option>a) Al principio del documento</option>
+				<option>b) En la sección head</option>
+				<option>c) En la sección body</option>
+				<option>d) Al final del documento</option>
+			<answer>1</answer>
+	</question>
+	
+	
+	<question id="pregunta_005">
+		<type>multiple</type>
+			<title>5.- ¿Dónde se puede insertar código JavaScript en un documento HTML?</title>
+				<option>a) En el head</option>
+				<option>b) En el body</option>
+				<option>c) No se puede introducir</option>
+				<option>d) Ninguna de las anteriores es correcta</option>
+		<answer>0</answer>
+		<answer>1</answer>
+	</question>
+	
+	
+	<question id="pregunta_006">
+		<type>radio</type>
+			<title>6.- ¿Qué significa DTD?</title>
+				<option>a) Dynamic Type Definition </option>
+				<option>b) Direct Type Definition </option>
+				<option>c) Document Type Definition</option>
+				<option>d) Las anteriores respuestas no son correctas </option>
+			<answer>2</answer>
+	</question>
+	
+	
+	<question id="pregunta_007">
+			<type>text</type>
+				<title>7.- ¿Los elementos HTML ser representan por etiquetas?</title>
+			<answer>si</answer>
+	</question>
+	
+	
+	
+	<question id="pregunta_008">
+		<type>checkbox</type>
+			<title>8.- Indica cuál es el código CSS que define un texto en rojo, con el tipo de letra Arial y el tamaño 14 pixels</title>
+				<option>a) font-family: Arial; size: 14px; color: #FF0000; </option>
+				<option>b) font-family: Arial; font-size: 14px; color: #FF0000; </option>
+				<option>c) text-family: Arial; font-size: 14px; color: #FF0000; </option>
+			<answer>2</answer>
+	</question>
+	
+	
+	<question id="pregunta_009">
+		<type>select</type>
+			<title>9.- En CSS, ¿qué valor define el margen derecho en la siguiente regla? {margin: 5px 10px 15px 20px;}</title>
+				<option>a) 5px</option>
+				<option>b) 10px</option>
+				<option>c) 15px</option>
+				<option>d) 20px</option>
+			<answer>1</answer>
+	</question>
+	
+	
+	<question id="pregunta_010">
+		<type>multiple</type>
+			<title>10.-¿Qué propiedades no existen en CSS?</title>
+				<option>a) border-color</option>
+				<option>b) border-line </option>
+				<option>c) border-style</option>
+				<option>d) border-background</option>
+			<answer>1</answer>
+			<answer>3</answer>
+	</question>
+</questions>
