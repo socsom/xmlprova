@@ -32,6 +32,9 @@ S'edita un arxiu XML amb les preguntes, opcions i respostes que en conjunt forme
 
 * Ha d'incloure diferents CCS segons sigui responsive o amb % ja val??
 * S'ha d'assignar cada tag xml  a un element html o es pot agafar un html i assignarle tot una question p.e.?
+* Com lligues els nodes? Què poses als atributs??
+* 
+
 
 #WHAT'S NEXT?
 
