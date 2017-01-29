@@ -9,7 +9,7 @@ xhttp.send();
 
 function myFunction(xml) {
     var xmlDoc = xml.responseXML;
-    document.getElementById("radio1").innerHTML =
+    document.getElementById("title").innerHTML =
     xmlDoc.getElementsByTagName("title")[0].childNodes[3].nodeValue;
     document.getElementById("r0_1").innerHTML =
     xmlDoc.getElementsByTagName("option")[0].childNodes[0].nodeValue;
