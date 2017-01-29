@@ -11,7 +11,7 @@ function myFunction(xml) {
     var xmlDoc = xml.responseXML;
     document.getElementById("title").innerHTML =
     xmlDoc.getElementsByTagName("title")[0].childNodes[3].nodeValue;
-    document.getElementById("r0_1").innerHTML =
+    document.getElementById("r11").innerHTML =
     xmlDoc.getElementsByTagName("option")[0].childNodes[0].nodeValue;
     
     document.getElementById("title2").innerHTML =
