@@ -36,5 +36,5 @@ S'edita un arxiu XML amb les preguntes, opcions i respostes que en conjunt forme
 #WHAT'S NEXT?
 
 * Acabar d'assignar correctament el xml al html i escriure les funcions de recollida d'inputs del usuaris en jscript:
-http://fpadistancia.caib.es/mod/page/view.php?id=63791
+http://fpadistancia.caib.es/mod/page/view.php?id=63792
 
