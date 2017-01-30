@@ -9,7 +9,7 @@ xhttp.send();
 
 function myFunction(xml) {
     var xmlDoc = xml.responseXML;
-    
+    /*
     document.getElementById("title").innerHTML =
     xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
     document.getElementById("r11").innerHTML =
@@ -32,7 +32,7 @@ function myFunction(xml) {
     xmlDoc.getElementsByTagName("option")[5].childNodes[0].nodeValue;
     document.getElementById("r33").innerHTML =
     xmlDoc.getElementsByTagName("option")[6].childNodes[0].nodeValue;
-    
+    */
     
     document.getElementById("title4").innerHTML =
     xmlDoc.getElementsByTagName("title")[3].childNodes[0].nodeValue;
@@ -47,7 +47,7 @@ function myFunction(xml) {
     option.text = xmlDoc.getElementsByTagName("option")[i].childNodes[0].nodeValue;
     option.value=i+1;
     select.options.add(option);
-    
+    /*
     document.getElementById("title5").innerHTML =
     xmlDoc.getElementsByTagName("title")[4].childNodes[0].nodeValue;
     document.getElementById("title6").innerHTML =
@@ -60,4 +60,5 @@ function myFunction(xml) {
     xmlDoc.getElementsByTagName("title")[8].childNodes[0].nodeValue;
     document.getElementById("title10").innerHTML =
     xmlDoc.getElementsByTagName("title")[9].childNodes[0].nodeValue;
+    */
 }
