@@ -10,7 +10,7 @@ xhttp.send();
 function myFunction(xml) {
     var xmlDoc = xml.responseXML;
     document.getElementById("title").innerHTML =
-    xmlDoc.getElementById("pregunta_001").childNodes[0].innerHTML;
+    xmlDoc.getElementById("pregunta_001").childNodes[1].innerHTML;
     document.getElementById("title2").innerHTML =
     xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
     document.getElementById("title3").innerHTML =
