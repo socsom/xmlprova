@@ -39,7 +39,16 @@ function gestionarXml(dadesXml) {
     */
     
     
-    //SELECT 1
+    //***************************************************************************************************NUMBER
+ //Recuperamos el título y la respuesta correcta de Input, guardamos el número secreto
+ var title1=xmlDoc.getElementsByTagName("title")[1].childNodes[0].nodeValue;
+ ponerDatosInputHtml(title1);
+// RESPUESTA FALTA!!numeroSecreto=parseInt(xmlDoc.getElementsByTagName("answer")[0].childNodes[0].nodeValue);
+    function ponerDatosInputHtml(t){
+ document.getElementById("title1").innerHTML = t;
+}
+
+    //**************************************************************************************************SELECT 1
  //Recuperamos el título y las opciones, guardamos la respuesta correcta
  var title4=xmlDoc.getElementsByTagName("title")[3].childNodes[0].nodeValue;
  var opcionesSelect = [];
@@ -48,7 +57,7 @@ function gestionarXml(dadesXml) {
     opcionesSelect[i] = xmlDoc.getElementById("pregunta_004").getElementsByTagName('option')[i].childNodes[0].nodeValue;
  }
  ponerDatosSelectHtml(title4,opcionesSelect);
-//FALTA respuestaSelect=parseInt(xmlDoc.getElementsByTagName("answer")[1].childNodes[0].nodeValue);
+//RESPUESTA FALTA respuestaSelect=parseInt(xmlDoc.getElementsByTagName("answer")[1].childNodes[0].nodeValue);
     
   function ponerDatosSelectHtml(t,opt){
   document.getElementById("title4").innerHTML=t;
@@ -65,7 +74,7 @@ function gestionarXml(dadesXml) {
 }
        
     
-    //SELECT 2
+    //********************************************************************************************************SELECT 2
  //Recuperamos el título y las opciones, guardamos la respuesta correcta
  var title9=xmlDoc.getElementsByTagName("title")[8].childNodes[0].nodeValue;
  var opcionesSelect2 = [];
