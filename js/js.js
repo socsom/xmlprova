@@ -39,7 +39,7 @@ function gestionarXml(dadesXml) {
     */
     
     
-    //SELECT
+    //SELECT 1
  //Recuperamos el título y las opciones, guardamos la respuesta correcta
  var title4=xmlDoc.getElementsByTagName("title")[3].childNodes[0].nodeValue;
  var opcionesSelect = [];
@@ -63,6 +63,34 @@ function gestionarXml(dadesXml) {
     select.options.add(option);
  }  
 }
+    
+      
+    
+    //SELECT 2
+ //Recuperamos el título y las opciones, guardamos la respuesta correcta
+ var title9=xmlDoc.getElementsByTagName("title")[8].childNodes[0].nodeValue;
+ var opcionesSelect2 = [];
+ var nopt2 = xmlDoc.getElementById("pregunta_009").getElementsByTagName('option').length;
+  for (i = 0; i < nopt2; i++) { 
+    opcionesSelect2[i] = xmlDoc.getElementById("pregunta_009").getElementsByTagName('option')[i].childNodes[0].nodeValue;
+ }
+ ponerDatosSelect2Html(title9,opcionesSelect2);
+//FALTA respuestaSelect=parseInt(xmlDoc.getElementsByTagName("answer")[1].childNodes[0].nodeValue);
+    
+  function ponerDatosSelect2Html(t,opt){
+  document.getElementById("title9").innerHTML=t;
+     //RECUERDA document se refiere al documento HTML, xmlDOC es el documento leido XML.   
+  var select = document.getElementsByTagName("select")[0];
+  
+     //Bucle para rellenar todas las opciones de select
+  for (i = 0; i < opt.length; i++) { 
+    var option = document.createElement("option");
+    option.text = opt[i];
+    option.value=i+1;
+    select.options.add(option);
+ }  
+}
+      
     
     
 /* BORRAR?!!    
