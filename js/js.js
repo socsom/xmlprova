@@ -1,14 +1,18 @@
+//LEER XML de xml/questions.xml
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-        myFunction(this);
+        gestionarXml(this);
     }
 };
 xhttp.open("GET", "questions.xml", true);
 xhttp.send();
-
-function myFunction(xml) {
-    var xmlDoc = xml.responseXML;
+//****************************************************************************************************
+// Recuperamos los datos del fichero XML xml/questions.xml
+// xmlDOC es el documento leido XML. 
+function gestionarXml(dadesXml) {
+    var xmlDoc = dadesXml.responseXML;//Parse XML to xmlDoc
+   
     /*
     document.getElementById("title").innerHTML =
     xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
@@ -34,8 +38,35 @@ function myFunction(xml) {
     xmlDoc.getElementsByTagName("option")[6].childNodes[0].nodeValue;
     */
     
-    document.getElementById("title4").innerHTML =
-    xmlDoc.getElementsByTagName("title")[3].childNodes[0].nodeValue;
+    
+    //SELECT
+ //Recuperamos el título y las opciones, guardamos la respuesta correcta
+ var title4=xmlDoc.getElementsByTagName("title")[3].childNodes[0].nodeValue;
+ var opcionesSelect = [];
+ var nopt = xmlDoc.getElementById("pregunta_004").getElementsByTagName('option').length;
+  for (i = 0; i < nopt; i++) { 
+    opcionesSelect[i] = xmlDoc.getElementById("pregunta_004").getElementsByTagName('option')[i].childNodes[0].nodeValue;
+ }
+ ponerDatosSelectHtml(title4,opcionesSelect);
+//FALTA respuestaSelect=parseInt(xmlDoc.getElementsByTagName("answer")[1].childNodes[0].nodeValue);
+    
+  function ponerDatosSelectHtml(t,opt){
+  document.getElementById("title4").innerHTML=t;
+     //RECUERDA document se refiere al documento HTML, xmlDOC es el documento leido XML.   
+  var select = document.getElementsByTagName("select")[0];
+  
+     //Bucle para rellenar todas las opciones de select
+  for (i = 0; i < opt.length; i++) { 
+    var option = document.createElement("option");
+    option.text = opt[i];
+    option.value=i+1;
+    select.options.add(option);
+ }  
+}
+    
+    
+/* BORRAR?!!    
+    
     
     //RECUERDA document se refiere al documento HTML, xmlDOC es el documento leido XML.
      var select = document.getElementsByTagName("select")[0];
@@ -47,6 +78,9 @@ function myFunction(xml) {
     option.text = xmlDoc.getElementsByTagName("option")[i].childNodes[0].nodeValue;
     option.value=i+1;
     select.options.add(option);
+    
+    */
+    
     /*
     document.getElementById("title5").innerHTML =
     xmlDoc.getElementsByTagName("title")[4].childNodes[0].nodeValue;
