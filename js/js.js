@@ -77,17 +77,17 @@ function gestionarXml(dadesXml) {
  ponerDatosSelect2Html(title9,opcionesSelect2);
 //FALTA respuestaSelect=parseInt(xmlDoc.getElementsByTagName("answer")[1].childNodes[0].nodeValue);
     
-  function ponerDatosSelect2Html(t,opt){
-  document.getElementById("title9").innerHTML=t;
+  function ponerDatosSelect2Html(t2,opt2){
+  document.getElementById("title9").innerHTML=t2;
      //RECUERDA document se refiere al documento HTML, xmlDOC es el documento leido XML.   
-  var select = document.getElementsByTagName("select")[0];
+  var select2 = document.getElementsByTagName("select")[1];
   
      //Bucle para rellenar todas las opciones de select
-  for (i = 0; i < opt.length; i++) { 
-    var option = document.createElement("option");
-    option.text = opt[i];
-    option.value=i+1;
-    select.options.add(option);
+  for (i = 0; i < opt2.length; i++) { 
+    var option2 = document.createElement("option");
+    option2.text = opt2[i];
+    option2.value=i+1;
+    select2.options.add(option2);
  }  
 }
       
