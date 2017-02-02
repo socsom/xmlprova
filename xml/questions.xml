@@ -31,11 +31,11 @@
 	
 	<question id="pregunta_004">
 		<type>select</type>
-			<title>4.- En un HTML ¿cuál es lugar correcto para definir una hoja de estilo externa</title>
-				<option>a) Al principio del documento</option>
-				<option>b) En la sección head</option>
-				<option>c) En la sección body</option>
-				<option>d) Al final del documento</option>
+			<title>4.- En un HTML ¿cuál es lugar correcto para definir una hoja de estilo externa?</title>
+				<option>Al principio del documento</option>
+				<option>En la sección head</option>
+				<option>En la sección body</option>
+				<option>Al final del documento</option>
 			<answer>1</answer>
 	</question>
 	
@@ -84,10 +84,10 @@
 	<question id="pregunta_009">
 		<type>select</type>
 			<title>9.- En CSS, ¿qué valor define el margen derecho en la siguiente regla? {margin: 5px 10px 15px 20px;}</title>
-				<option>a) 5px</option>
-				<option>b) 10px</option>
-				<option>c) 15px</option>
-				<option>d) 20px</option>
+				<option>5px</option>
+				<option>10px</option>
+				<option>15px</option>
+				<option>20px</option>
 			<answer>1</answer>
 	</question>
 	
