@@ -41,11 +41,11 @@ function gestionarXml(dadesXml) {
     
     //***************************************************************************************************NUMBER
  //Recuperamos el título y la respuesta correcta de Input, guardamos el número secreto
- var title1=xmlDoc.getElementsByTagName("title")[1].childNodes[0].nodeValue;
- ponerDatosInputHtml(title1);
+ var title2=xmlDoc.getElementsByTagName("title")[1].childNodes[0].nodeValue;
+ ponerDatosInputHtml(title2);
 // RESPUESTA FALTA!!numeroSecreto=parseInt(xmlDoc.getElementsByTagName("answer")[0].childNodes[0].nodeValue);
     function ponerDatosInputHtml(t){
- document.getElementById("title1").innerHTML = t;
+ document.getElementById("title2").innerHTML = t;
 }
 
     //**************************************************************************************************SELECT 1
