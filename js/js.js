@@ -74,7 +74,7 @@ function gestionarXml(dadesXml) {
   function ponerDatosSelect2Html(t2,opt2){
   document.getElementById("title9").innerHTML=t2;
      //RECUERDA document se refiere al documento HTML, xmlDOC es el documento leido XML.   
-  var select2 = document.getElementsByTagName("select")[2];
+  var select2 = document.getElementsByTagName("select")[1];
   
      //Bucle para rellenar todas las opciones de select
   for (i = 0; i < opt2.length; i++) { 
