@@ -39,7 +39,7 @@ function gestionarXml(dadesXml) {
     */
     
     
-    //***************************************************************************************************NUMBER
+    //***************************************************************************************************NUMBER1
  //Recuperamos el título y la respuesta correcta de Input, guardamos el número secreto
  var title2=xmlDoc.getElementsByTagName("title")[1].childNodes[0].nodeValue;
  ponerDatosInputHtml(title2);
@@ -47,6 +47,17 @@ function gestionarXml(dadesXml) {
     function ponerDatosInputHtml(t){
  document.getElementById("title2").innerHTML = t;
 }
+    
+   //***************************************************************************************************NUMBER2
+ //Recuperamos el título y la respuesta correcta de Input, guardamos el número secreto
+ var title7=xmlDoc.getElementsByTagName("title")[6].childNodes[0].nodeValue;
+ ponerDatosInputHtml(title7);
+// RESPUESTA FALTA!!numeroSecreto=parseInt(xmlDoc.getElementsByTagName("answer")[0].childNodes[0].nodeValue);
+    function ponerDatosInputHtml2(t2){
+ document.getElementById("title7").innerHTML = t2;
+}
+ 
+    
 
     //**************************************************************************************************SELECT 1
  //Recuperamos el título y las opciones, guardamos la respuesta correcta
