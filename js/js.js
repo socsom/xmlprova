@@ -28,8 +28,8 @@ function gestionarXml(dadesXml) {
  var title7=xmlDoc.getElementsByTagName("title")[6].childNodes[0].nodeValue;
  ponerDatosInputHtml2(title7);
 // RESPUESTA FALTA!!numeroSecreto=parseInt(xmlDoc.getElementsByTagName("answer")[0].childNodes[0].nodeValue);
-    function ponerDatosInputHtml2(t2){
- document.getElementById("title7").innerHTML = t2;
+    function ponerDatosInputHtml2(t){
+ document.getElementById("title7").innerHTML = t;
 }
  
     
