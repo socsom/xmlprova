@@ -13,32 +13,7 @@ xhttp.send();
 function gestionarXml(dadesXml) {
     var xmlDoc = dadesXml.responseXML;//Parse XML to xmlDoc
    
-    /*
-    document.getElementById("title").innerHTML =
-    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
-    document.getElementById("r11").innerHTML =
-    xmlDoc.getElementsByTagName("option")[0].childNodes[0].nodeValue;
-    document.getElementById("r12").innerHTML =
-    xmlDoc.getElementsByTagName("option")[1].childNodes[0].nodeValue;
-    document.getElementById("r13").innerHTML =
-    xmlDoc.getElementsByTagName("option")[2].childNodes[0].nodeValue;
-    document.getElementById("r14").innerHTML =
-    xmlDoc.getElementsByTagName("option")[3].childNodes[0].nodeValue;
-    
-    document.getElementById("title2").innerHTML =
-    xmlDoc.getElementsByTagName("title")[1].childNodes[0].nodeValue;
-    
-    document.getElementById("title3").innerHTML =
-    xmlDoc.getElementsByTagName("title")[2].childNodes[0].nodeValue;
-    document.getElementById("r31").innerHTML =
-    xmlDoc.getElementsByTagName("option")[4].childNodes[0].nodeValue;
-    document.getElementById("r32").innerHTML =
-    xmlDoc.getElementsByTagName("option")[5].childNodes[0].nodeValue;
-    document.getElementById("r33").innerHTML =
-    xmlDoc.getElementsByTagName("option")[6].childNodes[0].nodeValue;
-    */
-    
-    
+      
     //***************************************************************************************************NUMBER1
  //Recuperamos el título y la respuesta correcta de Input, guardamos el número secreto
  var title2=xmlDoc.getElementsByTagName("title")[1].childNodes[0].nodeValue;
@@ -110,6 +85,7 @@ function gestionarXml(dadesXml) {
  }  
 }
 
+    /* PENDIENTE DE REVISAR
     
     //**************************************************************************************************MSELECT 1
  //Recuperamos el título y las opciones, guardamos la respuesta correcta
@@ -136,10 +112,41 @@ function gestionarXml(dadesXml) {
  }  
 }
        
+    */
+  //***********************************************************************************************************CHECKBOX
+ //Recuperamos el título y las opciones, guardamos las respuestas correctas
+ var tituloCheckbox = xmlDoc.getElementsByTagName("title")[2].childNodes[0].nodeValue;
+ var opcionesCheckbox = [];
+ var nopt = xmlDoc.getElementById("preguntas_003").getElementsByTagName('option').length;
+ for (i = 0; i < nopt; i++) { 
+    opcionesCheckbox[i]=xmlDoc.getElementById("preguntas_003").getElementsByTagName('option')[i].childNodes[0].nodeValue;
+ }  
+ ponerDatosCheckboxHtml(tituloCheckbox,opcionesCheckbox);
+ /* RESPUESTAS
+ var nres = xmlDoc.getElementById("preguntas_003").getElementsByTagName('answer').length;
+ for (i = 0; i < nres; i++) { 
+  respuestasCheckbox[i]=xmlDoc.getElementById("preguntas_003").getElementsByTagName("answer")[i].childNodes[0].nodeValue;
+ }
+} 
+*/
     
-   
-    
-
+function ponerDatosCheckboxHtml(t,opt){
+ var checkboxContainer=document.getElementById('checkboxDiv');
+ var h3 = document.createElement("h3");
+ h3.innerHTML = t;
+ checkboxContainer.appendChild(h3); 
+ for (i = 0; i < opt.length; i++) { 
+    var input = document.createElement("input");
+    var label = document.createElement("label");
+    label.innerHTML=opt[i];
+    label.setAttribute("for", "color_"+i);
+    input.type="checkbox";
+    input.name="color";
+    input.id="color_"+i;;    
+    checkboxContainer.appendChild(input);
+    checkboxContainer.appendChild(label);
+ }  
+}
     /*
     document.getElementById("title5").innerHTML =
     xmlDoc.getElementsByTagName("title")[4].childNodes[0].nodeValue;
