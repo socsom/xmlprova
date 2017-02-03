@@ -99,7 +99,7 @@ function gestionarXml(dadesXml) {
   function ponerDatosSelect2Html(t2,opt2){
   document.getElementById("title9").innerHTML=t2;
      //RECUERDA document se refiere al documento HTML, xmlDOC es el documento leido XML.   
-  var select2 = document.getElementsByTagName("select")[1];
+  var select2 = document.getElementsByTagName("select")[2];
   
      //Bucle para rellenar todas las opciones de select
   for (i = 0; i < opt2.length; i++) { 
@@ -109,7 +109,34 @@ function gestionarXml(dadesXml) {
     select2.options.add(option2);
  }  
 }
-      
+
+    
+    //**************************************************************************************************MSELECT 1
+ //Recuperamos el título y las opciones, guardamos la respuesta correcta
+ var title5=xmlDoc.getElementsByTagName("title")[4].childNodes[0].nodeValue;
+ var opcionesMSelect = [];
+ var nmopt = xmlDoc.getElementById("pregunta_005").getElementsByTagName('option').length;
+  for (i = 0; i < nmopt; i++) { 
+    opcionesMSelect[i] = xmlDoc.getElementById("pregunta_005").getElementsByTagName('option')[i].childNodes[0].nodeValue;
+ }
+ ponerDatosMSelectHtml(title5,opcionesMSelect);
+//RESPUESTA FALTA respuestaSelect=parseInt(xmlDoc.getElementsByTagName("answer")[1].childNodes[0].nodeValue);
+    
+  function ponerDatosMSelectHtml(mt,mopt){
+  document.getElementById("title5").innerHTML=mt;
+     //RECUERDA document se refiere al documento HTML, xmlDOC es el documento leido XML.   
+  var mSelect = document.getElementsByTagName("select")[1];
+  
+     //Bucle para rellenar todas las opciones de select
+  for (i = 0; i < mopt.length; i++) { 
+    var moption = document.createElement("option");
+    moption.text = mopt[i];
+    moption.value=i+1;
+    mSelect.options.add(moption);
+ }  
+}
+       
+    
    
     
 
