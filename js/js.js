@@ -111,14 +111,14 @@ function gestionarXml(dadesXml) {
     mSelect.options.add(moption);
  }  
 }
-       
+  */     
     
   //***********************************************************************************************************CHECKBOX
  //Recuperamos el título y las opciones, guardamos las respuestas correctas
  var tituloCheckbox = xmlDoc.getElementsByTagName("title")[2].childNodes[0].nodeValue;
  var opcionesCheckbox = [];
- var nopt = xmlDoc.getElementById("pregunta_003").getElementsByTagName('option').length;
- for (i = 0; i < nopt; i++) { 
+ var nopt3 = xmlDoc.getElementById("pregunta_003").getElementsByTagName('option').length;
+ for (i = 0; i < nopt3; i++) { 
     opcionesCheckbox[i]=xmlDoc.getElementById("pregunta_003").getElementsByTagName('option')[i].childNodes[0].nodeValue;
  }  
  ponerDatosCheckboxHtml(tituloCheckbox,opcionesCheckbox);
@@ -129,7 +129,7 @@ function gestionarXml(dadesXml) {
  }
 } 
 */
- /*   
+ 
 function ponerDatosCheckboxHtml(t,opt){
  var checkboxContainer=document.getElementById('checkboxDiv');
  var h3 = document.createElement("h3");
