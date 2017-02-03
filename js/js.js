@@ -64,8 +64,8 @@ function gestionarXml(dadesXml) {
  //Recuperamos el título y las opciones, guardamos la respuesta correcta
  var title9=xmlDoc.getElementsByTagName("title")[8].childNodes[0].nodeValue;
  var opcionesSelect2 = [];
- var nopt2 = xmlDoc.getElementById("pregunta_009").getElementsByTagName('option').length;
-  for (i = 0; i < nopt2; i++) { 
+ var nopt = xmlDoc.getElementById("pregunta_009").getElementsByTagName('option').length;
+  for (i = 0; i < nopt; i++) { 
     opcionesSelect2[i] = xmlDoc.getElementById("pregunta_009").getElementsByTagName('option')[i].childNodes[0].nodeValue;
  }
  ponerDatosSelect2Html(title9,opcionesSelect2);
