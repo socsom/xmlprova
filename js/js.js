@@ -38,8 +38,8 @@ function gestionarXml(dadesXml) {
  //Recuperamos el título y las opciones, guardamos la respuesta correcta
  var title4=xmlDoc.getElementsByTagName("title")[3].childNodes[0].nodeValue;
  var opcionesSelect = [];
- var nopt = xmlDoc.getElementById("pregunta_004").getElementsByTagName('option').length;
-  for (i = 0; i < nopt; i++) { 
+ var nopt4 = xmlDoc.getElementById("pregunta_004").getElementsByTagName('option').length;
+  for (i = 0; i < nopt4; i++) { 
     opcionesSelect[i] = xmlDoc.getElementById("pregunta_004").getElementsByTagName('option')[i].childNodes[0].nodeValue;
  }
  ponerDatosSelectHtml(title4,opcionesSelect);
@@ -64,8 +64,8 @@ function gestionarXml(dadesXml) {
  //Recuperamos el título y las opciones, guardamos la respuesta correcta
  var title9=xmlDoc.getElementsByTagName("title")[8].childNodes[0].nodeValue;
  var opcionesSelect2 = [];
- var nopt2 = xmlDoc.getElementById("pregunta_009").getElementsByTagName('option').length;
-  for (i = 0; i < nopt2; i++) { 
+ var nopt9 = xmlDoc.getElementById("pregunta_009").getElementsByTagName('option').length;
+  for (i = 0; i < nopt9; i++) { 
     opcionesSelect2[i] = xmlDoc.getElementById("pregunta_009").getElementsByTagName('option')[i].childNodes[0].nodeValue;
  }
  ponerDatosSelect2Html(title9,opcionesSelect2);
@@ -115,13 +115,13 @@ function gestionarXml(dadesXml) {
     
   //***********************************************************************************************************CHECKBOX
  //Recuperamos el título y las opciones, guardamos las respuestas correctas
- var tituloCheckbox = xmlDoc.getElementsByTagName("title")[2].childNodes[0].nodeValue;
+ var title3 = xmlDoc.getElementsByTagName("title")[2].childNodes[0].nodeValue;
  var opcionesCheckbox = [];
  var nopt3 = xmlDoc.getElementById("pregunta_003").getElementsByTagName('option').length;
  for (i = 0; i < nopt3; i++) { 
     opcionesCheckbox[i]=xmlDoc.getElementById("pregunta_003").getElementsByTagName('option')[i].childNodes[0].nodeValue;
  }  
- ponerDatosCheckboxHtml(tituloCheckbox,opcionesCheckbox);
+ ponerDatosCheckboxHtml(title3,opcionesCheckbox);
  /* RESPUESTAS
  var nres = xmlDoc.getElementById("preguntas_003").getElementsByTagName('answer').length;
  for (i = 0; i < nres; i++) { 
