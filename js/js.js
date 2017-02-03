@@ -147,7 +147,7 @@ function ponerDatosCheckboxHtml(t,opt){
     checkboxContainer.appendChild(label);
  }  
 }
-    */
+    
     /*
     document.getElementById("title5").innerHTML =
     xmlDoc.getElementsByTagName("title")[4].childNodes[0].nodeValue;
