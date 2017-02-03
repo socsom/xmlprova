@@ -117,9 +117,9 @@ function gestionarXml(dadesXml) {
  //Recuperamos el título y las opciones, guardamos las respuestas correctas
  var tituloCheckbox = xmlDoc.getElementsByTagName("title")[2].childNodes[0].nodeValue;
  var opcionesCheckbox = [];
- var nopt = xmlDoc.getElementById("preguntas_003").getElementsByTagName('option').length;
+ var nopt = xmlDoc.getElementById("pregunta_003").getElementsByTagName('option').length;
  for (i = 0; i < nopt; i++) { 
-    opcionesCheckbox[i]=xmlDoc.getElementById("preguntas_003").getElementsByTagName('option')[i].childNodes[0].nodeValue;
+    opcionesCheckbox[i]=xmlDoc.getElementById("pregunta_003").getElementsByTagName('option')[i].childNodes[0].nodeValue;
  }  
  ponerDatosCheckboxHtml(tituloCheckbox,opcionesCheckbox);
  /* RESPUESTAS
