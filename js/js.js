@@ -216,18 +216,41 @@ function ponerDatosRadioHtml(t,opt){
     radioContainer.appendChild(label);
  }  
 }    
-    /*
-    document.getElementById("title5").innerHTML =
-    xmlDoc.getElementsByTagName("title")[4].childNodes[0].nodeValue;
-    document.getElementById("title6").innerHTML =
-    xmlDoc.getElementsByTagName("title")[5].childNodes[0].nodeValue;
-    document.getElementById("title7").innerHTML =
-    xmlDoc.getElementsByTagName("title")[6].childNodes[0].nodeValue;
-    document.getElementById("title8").innerHTML =
-    xmlDoc.getElementsByTagName("title")[7].childNodes[0].nodeValue;
-    document.getElementById("title9").innerHTML =
-    xmlDoc.getElementsByTagName("title")[8].childNodes[0].nodeValue;
-    document.getElementById("title10").innerHTML =
-    xmlDoc.getElementsByTagName("title")[9].childNodes[0].nodeValue;
-    */
+
+      //***********************************************************************************************************RADIO2
+ //Recuperamos el título y las opciones, guardamos las respuestas correctas
+ var title1 = xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+ var opcionesRadio2 = [];
+ var nopt1 = xmlDoc.getElementById("pregunta_001").getElementsByTagName('option').length;
+ for (i = 0; i < nopt1; i++) { 
+    opcionesRadio2[i]=xmlDoc.getElementById("pregunta_001").getElementsByTagName('option')[i].childNodes[0].nodeValue;
+ }  
+ ponerDatosRadio2Html(title1,opcionesRadio2);
+ /* RESPUESTAS
+ var nres = xmlDoc.getElementById("preguntas_003").getElementsByTagName('answer').length;
+ for (i = 0; i < nres; i++) { 
+  respuestasCheckbox[i]=xmlDoc.getElementById("preguntas_003").getElementsByTagName("answer")[i].childNodes[0].nodeValue;
+ }
+} 
+*/
+ 
+function ponerDatosRadio2Html(t,opt){
+ var radioContainer=document.getElementById('title1');
+ var h3 = document.createElement("h3");
+ h3.innerHTML = t;
+ radioContainer.appendChild(h3); 
+ for (i = 0; i < opt.length; i++) { 
+    var input = document.createElement("input");
+    var label = document.createElement("label");
+    label.innerHTML=opt[i];
+    label.setAttribute("for", "color_"+i);
+    input.type="radio";
+    input.name="color";
+    input.id="color_"+i;;    
+    radioContainer.appendChild(input);
+    radioContainer.appendChild(label);
+ }  
+}    
+    
+    
 }
