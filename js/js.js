@@ -148,6 +148,41 @@ function ponerDatosCheckboxHtml(t,opt){
  }  
 }
     
+  //***********************************************************************************************************CHECKBOX2
+ //Recuperamos el título y las opciones, guardamos las respuestas correctas
+ var title8 = xmlDoc.getElementsByTagName("title")[7].childNodes[0].nodeValue;
+ var opcionesCheckbox2 = [];
+ var nopt8 = xmlDoc.getElementById("pregunta_008").getElementsByTagName('option').length;
+ for (i = 0; i < nopt8; i++) { 
+    opcionesCheckbox2[i]=xmlDoc.getElementById("pregunta_008").getElementsByTagName('option')[i].childNodes[0].nodeValue;
+ }  
+ ponerDatosCheckbox2Html(title8,opcionesCheckbox2);
+ /* RESPUESTAS
+ var nres = xmlDoc.getElementById("preguntas_003").getElementsByTagName('answer').length;
+ for (i = 0; i < nres; i++) { 
+  respuestasCheckbox[i]=xmlDoc.getElementById("preguntas_003").getElementsByTagName("answer")[i].childNodes[0].nodeValue;
+ }
+} 
+*/
+ 
+function ponerDatosCheckbox2Html(t,opt){
+ var checkboxContainer=document.getElementById('title8');
+ var h3 = document.createElement("h3");
+ h3.innerHTML = t;
+ checkboxContainer.appendChild(h3); 
+ for (i = 0; i < opt.length; i++) { 
+    var input = document.createElement("input");
+    var label = document.createElement("label");
+    label.innerHTML=opt[i];
+    label.setAttribute("for", "color_"+i);
+    input.type="checkbox";
+    input.name="color";
+    input.id="color_"+i;;    
+    checkboxContainer.appendChild(input);
+    checkboxContainer.appendChild(label);
+ }  
+}  
+    
     /*
     document.getElementById("title5").innerHTML =
     xmlDoc.getElementsByTagName("title")[4].childNodes[0].nodeValue;
