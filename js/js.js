@@ -85,7 +85,7 @@ function gestionarXml(dadesXml) {
  }  
 }
 
-    /* PENDIENTE DE REVISAR
+ 
     
     //**************************************************************************************************MSELECT 1
  //Recuperamos el título y las opciones, guardamos la respuesta correcta
@@ -111,7 +111,7 @@ function gestionarXml(dadesXml) {
     mSelect.options.add(option);
  }  
 }
-  */     
+   
     
   //***********************************************************************************************************CHECKBOX
  //Recuperamos el título y las opciones, guardamos las respuestas correctas
