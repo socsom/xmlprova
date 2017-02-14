@@ -14,25 +14,27 @@
 	
 	<question id="pregunta_002">
 		<type>text</type>
-			<title>2.- ¿JavaScript puede cambiar atributos HTML?</title>
-			<answer>si</answer>
+			<title>2.- ¿Cuáles son las siglas de Cascading Style Sheets?</title>
+			<answer>CSS</answer>
 	</question>
 	
 	
 	<question id="pregunta_003">
 		<type>checkbox</type>
-			<title>3.- ¿Qué significa XHTML?</title>
-				<option>Xml HyperText Markup Language </option>
-				<option>eXtensible HyperText Modeling Language</option>
-				<option>eXtensible HyperText Markup Language </option>
-			<answer>3</answer>
+			<title>3.- ¿Cuáles son operadores correctos en Javascript?</title>
+				<option>+=</option>
+				<option>=*</option>
+				<option>-=</option>
+				<option>=/</option>
+			<answer>0</answer>
+			<answer>2</answer>
 	</question>
 	
 	
 	<question id="pregunta_004">
 		<type>select</type>
 			<title>4.- En un HTML ¿cuál es lugar correcto para definir una hoja de estilo externa?</title>
-				<option>Al principio del documento</option>
+				<option>No se puede</option>
 				<option>En la sección head</option>
 				<option>En la sección body</option>
 				<option>Al final del documento</option>
@@ -65,38 +67,40 @@
 	
 	<question id="pregunta_007">
 			<type>text</type>
-				<title>7.- ¿Los elementos HTML ser representan por etiquetas?</title>
-			<answer>si</answer>
+				<title>7.-¿Cuáles son las siglas de eXtensible HyperText Markup Language?</title>
+			<answer>XHTML</answer>
 	</question>
 	
 	
 	
 	<question id="pregunta_008">
 		<type>checkbox</type>
-			<title>8.- Indica cuál es el código CSS que define un texto en rojo, con el tipo de letra Arial y el tamaño 14 pixels</title>
-				<option>font-family: Arial; size: 14px; color: #FF0000; </option>
-				<option>font-family: Arial; font-size: 14px; color: #FF0000; </option>
-				<option>text-family: Arial; font-size: 14px; color: #FF0000; </option>
+			<title>8.- En Javascript ¿cuales són nombres de variables correctos?</title>
+				<option>par3</option>
+				<option>1num</option>
+				<option>$money</option>
+				<option>variable azul</option>
+			<answer>0</answer>
 			<answer>2</answer>
 	</question>
 	
 	
 	<question id="pregunta_009">
 		<type>select</type>
-			<title>9.- En CSS, ¿qué valor define el margen derecho en la siguiente regla? {margin: 5px 10px 15px 20px;}</title>
+			<title>9.- En CSS, ¿qué valor define el margen inferior en la siguiente regla?: {margin: 5px 10px 15px 20px;}</title>
 				<option>5px</option>
 				<option>10px</option>
 				<option>15px</option>
 				<option>20px</option>
-			<answer>1</answer>
+			<answer>2</answer>
 	</question>
 	
 	
 	<question id="pregunta_010">
 		<type>multiple</type>
-			<title>10.-¿Qué propiedades no existen en CSS?</title>
+			<title>10.-¿Qué propiedades NO existen en CSS?</title>
 				<option>border-color</option>
-				<option>border-line </option>
+				<option>border-border </option>
 				<option>border-style</option>
 				<option>border-background</option>
 			<answer>1</answer>
