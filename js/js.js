@@ -17,7 +17,7 @@ var respuesta10=[];
 var nota=0; //nota de la prueba sobre 10
 
 //**************************************************************************************************** 
-
+/*
 //Después de cargar la página (onload) se definen los eventos sobre los elementos entre otras acciones.
 window.onload = function(){ 
 
@@ -30,7 +30,7 @@ window.onload = function(){
    corregir2();
    corregir3();
    */
-   corregir4();
+  // corregir4();
   /*
      corregir5();
    corregir6(); 
@@ -40,12 +40,12 @@ window.onload = function(){
    corregir10();
    
    */
-   presentarNota();   // al final del DOC
+  // presentarNota();   // al final del DOC
   
-   return false;
-}
+  // return false;
+//}
 
-
+*/
 
 //LEER XML de xml/questions.xml
 var xhttp = new XMLHttpRequest();
