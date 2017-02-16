@@ -345,7 +345,7 @@ function ponerDatosCheckbox2Html(t,opt){
        
     
 }// termina la función gestionarXML
-    
+/*    
 //****************************************************************************************************
 //Gestionar la presentación de las respuestas. La funcion darRespuestaHTML recoge uno a uno el resultado de las correcciones
 // y lo pone en el resultadosDiv del HTML
@@ -365,3 +365,4 @@ function inicializar(){
    nota=0.0;
 }
     
+*/
