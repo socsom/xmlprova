@@ -233,7 +233,7 @@ function ponerDatosRadioHtml(t,opt){
     label.setAttribute("for", "color_"+i);
     input.type="radio";
     input.name="color";
-    input.id="color_"+i;;    
+    input.id="color_"+i;    
     radioContainer.appendChild(input);
     radioContainer.appendChild(label);
  }  
@@ -278,7 +278,7 @@ function ponerDatosCheckbox2Html(t,opt){
     label.setAttribute("for", "color_"+i);
     input.type="checkbox";
     input.name="color";
-    input.id="color_"+i;;    
+    input.id="color_"+i;   
     checkboxContainer.appendChild(input);
     checkboxContainer.appendChild(label);
  }  
@@ -341,10 +341,9 @@ function ponerDatosCheckbox2Html(t,opt){
  }  
 }
 
-    
+}   
        
-    
-}// termina la función gestionarXML
+   // termina la función gestionarXML
 /*    
 //****************************************************************************************************
 //Gestionar la presentación de las respuestas. La funcion darRespuestaHTML recoge uno a uno el resultado de las correcciones
