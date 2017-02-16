@@ -165,6 +165,8 @@ function ponerDatosCheckboxHtml(t,opt){
     select.options.add(option);
  }  
 }
+/*
+ 
  //AHORA CORRIGE LA RESPUESTAS
  function corregir4(){
   //Compara el índice seleccionado con el valor del íncide que hay en el xml (<answer>2</answer>)
@@ -177,7 +179,7 @@ function ponerDatosCheckboxHtml(t,opt){
   }
   else darRespuestaHtml("P4: Incorrecto");
 }   
-    
+    */
     
     //**********************************************************************************PREGUNTA 5***************MSELECT 1
  //Recuperamos el título y las opciones, guardamos la respuesta correcta
