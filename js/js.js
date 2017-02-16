@@ -63,7 +63,7 @@ function gestionarXml(dadesXml) {
     var xmlDoc = dadesXml.responseXML;//Parse XML to xmlDoc
    
   
- 
+/* 
       //*****************************************************************************PREGUNTA 1*******************RADIO2
  //Recuperamos el título y las opciones, guardamos las respuestas correctas
  var title1 = xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
@@ -139,7 +139,7 @@ function ponerDatosCheckboxHtml(t,opt){
  }  
 }
      
-    
+  */  
 
     //******************************************************************************PREGUNTA 4********************SELECT 1
  //Recuperamos el título y las opciones, guardamos la respuesta correcta
@@ -165,6 +165,7 @@ function ponerDatosCheckboxHtml(t,opt){
     select.options.add(option);
  }  
 }
+ 
 /*
  
  //AHORA CORRIGE LA RESPUESTAS
@@ -180,7 +181,7 @@ function ponerDatosCheckboxHtml(t,opt){
   else darRespuestaHtml("P4: Incorrecto");
 }   
     */
-    
+  /*  
     //**********************************************************************************PREGUNTA 5***************MSELECT 1
  //Recuperamos el título y las opciones, guardamos la respuesta correcta
  var title5=xmlDoc.getElementsByTagName("title")[4].childNodes[0].nodeValue;
@@ -340,7 +341,7 @@ function ponerDatosCheckbox2Html(t,opt){
     mSelect.options.add(option);
  }  
 }
-
+*/
 }   
        
    // termina la función gestionarXML
