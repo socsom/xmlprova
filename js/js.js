@@ -166,7 +166,7 @@ function ponerDatosCheckboxHtml(t,opt){
  }  
 }
  
-
+/*
  
  //AHORA CORRIGE LA RESPUESTAS
  function corregir4(){
@@ -180,7 +180,7 @@ function ponerDatosCheckboxHtml(t,opt){
   }
   else darRespuestaHtml("P4: Incorrecto");
 }   
-    
+  */  
    
     //**********************************************************************************PREGUNTA 5***************MSELECT 1
  //Recuperamos el título y las opciones, guardamos la respuesta correcta
