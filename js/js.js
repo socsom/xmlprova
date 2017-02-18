@@ -178,7 +178,7 @@ function ponerDatosCheckboxHtml(t,opt){
   //Compara el índice seleccionado con el valor del íncide que hay en el xml (<answer>2</answer>)
   //para implementarlo con type radio, usar value para enumerar las opciones <input type='radio' value='1'>...
   //luego comparar ese value con el value guardado en answer
-  var sel = formElement.elements[0];  // CREO QUE ESTO ES EL ORDEN EN QUE SE PRESENTAN LOS RESULTADOS EN EL DIV
+  var sel = formElement.elements[4];  // CREO QUE ESTO ES EL ORDEN EN QUE SE PRESENTAN LOS RESULTADOS EN EL DIV O PUEDE QUE SEA EL NUMERO DEL ELEMENTO EN ELFORMULARIO??
   if (sel.selectedIndex==respuesta4) {
    darRespuestaHtml("P4: Correcto");
    nota +=1;
