@@ -17,7 +17,7 @@ var respuesta10=[];
 var nota=0; //nota de la prueba sobre 10
 
 //**************************************************************************************************** 
-
+/*
 //Después de cargar la página (onload) se definen los eventos sobre los elementos entre otras acciones.
 window.onload = function(){ 
 
@@ -25,12 +25,13 @@ window.onload = function(){
  formElement=document.getElementById('myForm');
  formElement.onsubmit=function(){
    inicializar(); //al final del DOC
+   */
    /*
      corregir1();
    corregir2();
    corregir3();
    */
-  corregir4();
+  //corregir4();
   /*
      corregir5();
    corregir6(); 
