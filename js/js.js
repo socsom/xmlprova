@@ -171,7 +171,7 @@ function ponerDatosCheckboxHtml(t,opt){
  }  
 }
  
-/*
+
  
  //AHORA CORRIGE LA RESPUESTAS
  function corregir4(){
@@ -185,7 +185,7 @@ function ponerDatosCheckboxHtml(t,opt){
   }
   else darRespuestaHtml("P4: Incorrecto");
 }   
-  */  
+   
    
     //**********************************************************************************PREGUNTA 5***************MSELECT 1
  //Recuperamos el título y las opciones, guardamos la respuesta correcta
@@ -350,7 +350,7 @@ function ponerDatosCheckbox2Html(t,opt){
 }   
        
    // termina la función gestionarXML
- /*  
+ 
 //****************************************************************************************************
 //Gestionar la presentación de las respuestas. La funcion darRespuestaHTML recoge uno a uno el resultado de las correcciones
 // y lo pone en el resultadosDiv del HTML
@@ -370,4 +370,4 @@ function inicializar(){
    nota=0.0;
 }
     
-*/
+
