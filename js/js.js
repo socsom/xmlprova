@@ -1,11 +1,11 @@
 //Definimos las variables donde se guardaran las respuestas y la nota y el conjunto del formulario
-//var formElement=null;
+var formElement=null;
 /*
 var respuesta1=null;
 var respuesta2=null;
 var respuesta3=[];
 */
-//var respuesta4=null;
+var respuesta4=null;
 /*
 var respuesta5=[];
 var respuesta6=null;
@@ -14,7 +14,7 @@ var respuesta8=[];
 var respuesta9=null;
 var respuesta10=[];
 */
-//var nota=0; //nota de la prueba sobre 10
+var nota=0; //nota de la prueba sobre 10
 
 //**************************************************************************************************** 
 /*
