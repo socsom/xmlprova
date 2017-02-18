@@ -17,36 +17,36 @@ var respuesta10=[];
 var nota=0; //nota de la prueba sobre 10
 
 //**************************************************************************************************** 
-/*
+
 //Después de cargar la página (onload) se definen los eventos sobre los elementos entre otras acciones.
 window.onload = function(){ 
 
  //CORREGIR al apretar el botón
  formElement=document.getElementById('myForm');
  formElement.onsubmit=function(){
-   inicializar(); //al final del DOC
-   */
+ inicializar(); //al final del DOC
+   
    /*
      corregir1();
    corregir2();
    corregir3();
    */
-  //corregir4();
+  corregir4();
   /*
-     corregir5();
+   corregir5();
    corregir6(); 
    corregir7();
    corregir8();
    corregir9();
    corregir10();
    
-   
-  // presentarNota();   // al final del DOC
+   */
+   presentarNota();   // al final del DOC
   
-  // return false;
-//}
+   return false;
+}
 
-*/
+
 
 //LEER XML de xml/questions.xml
 var xhttp = new XMLHttpRequest();
@@ -57,6 +57,10 @@ xhttp.onreadystatechange = function() {
 };
 xhttp.open("GET", "xml/questions.xml", true);
 xhttp.send();
+
+}
+
+
 //****************************************************************************************************
 // Recuperamos los datos del fichero XML xml/questions.xml
 // xmlDOC es el documento leido XML. 
