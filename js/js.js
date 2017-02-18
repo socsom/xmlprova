@@ -17,7 +17,7 @@ var respuesta10=[];
 var nota=0; //nota de la prueba sobre 10
 
 //**************************************************************************************************** 
-/*
+
 //Después de cargar la página (onload) se definen los eventos sobre los elementos entre otras acciones.
 window.onload = function(){ 
 
@@ -30,7 +30,7 @@ window.onload = function(){
    corregir2();
    corregir3();
    */
-  // corregir4();
+  corregir4();
   /*
      corregir5();
    corregir6(); 
@@ -150,7 +150,7 @@ function ponerDatosCheckboxHtml(t,opt){
     opcionesSelect[i] = xmlDoc.getElementById("pregunta_004").getElementsByTagName('option')[i].childNodes[0].nodeValue;
  }
  ponerDatosSelectHtml(title4,opcionesSelect);
-// respuesta4=parseInt(xmlDoc.getElementsByTagName("answer")[4].innerHTML);//COMPRUEBA LO DE GETELEMENTBYID
+ respuesta4=parseInt(xmlDoc.getElementsByTagName("answer")[4].innerHTML);//COMPRUEBA LO DE GETELEMENTBYID
     
   function ponerDatosSelectHtml(t,opt){
   document.getElementById("title4").innerHTML=t;
