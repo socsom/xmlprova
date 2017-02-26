@@ -4,91 +4,62 @@
 <title>Examen XML</title>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <meta name="description" content="Formulario/examen escrito en XML">
-<script src="js/js.js"></script>
-<meta charset="UTF-8"/>
+ <script src='js/questions.js'></script>
+ <meta charset="UTF-8"/>
 </head>
-
 <body>
-	<div class=logo>
+
+ <div class=logo>
 		<img src="img/logo.png" alt= "escudo universidad ficticia"/>
 	</div>
 	<div id=universidad>
 		<h1>UNIVERSIDAD DE LABRITJA</h1>
-		<h3>Examen de LMYSG: XML 1340</h3>
+		<h3>Examen de LMYSG: XML 1300</h3>
 	</div>
 	<div class=logo>
 		<img src="img/logo.png" alt= "escudo universidad ficticia"/>
 	</div>
 	<div id=examen>
-	
-		
-		<form id='myForm'>
-			
-			<div id='title1'></div>
- 			<br><br>
-			
-			
-			
-			
-			<h3 id="title2"></h3>
- 			<input type='text'>
-			<br><br>
-			
-		
-			<div id='title3'></div>
- 			<br><br>
-		
-			
-		
-			
-			<h3 id="title4"></h3>
- 			<select id='sel'>
-  			</select>
-			 <br><br>
-	 		
-			
-		
-			<h3 id="title5"></h3>
-			<select id="mSel" multiple>
-			</select>
-			<p>Presiona Ctrl para elegir varias opciones</p>
-			<br><br>
-			
-			
-			<div id='title6'></div>
- 			<br><br>
-			
-			
-			
-			
-			<h3 id="title7"></h3>
-			<input type='text'>
-			<br><br>
-			
-		
-			<div id='title8'></div>
- 			<br><br>
-			
-			
-			
-			<h3 id="title9"></h3>
-			<select id="sel2">
-  			</select>
-			<br><br>
-	 		
-			
-			<h3 id="title10"></h3>
-			<select id="mSel2" multiple>
-			</select>
-			<p>Presiona Ctrl para elegir varias opciones</p>
-			<br><br>
-			<input type='submit' value='Corrige'> 
-		
-		</form>
-		
-		<div id='resultadosDiv'></div>
-		
-	</div>
-	
+<form id='myform'>
+ 
+ <h3 id='tituloInput'></h3><br>
+ <input id='txt' type='text'>
+ <br><br>
+ 
+ <h3 id='tituloSelect'></h3>
+ <select id='sel'>
+ </select>
+ <br><br>
+
+ <h3 id='tituloInput2'></h3><br>
+ <input id='txt2' type='text'>
+ <br><br>
+ 
+ <h3 id='tituloSelect2'></h3>
+ <select id='sel2'>
+ </select>
+ <br><br>
+ 
+<h3 id='tituloCheckbox2'></h3><br>
+ <div id='checkboxDiv2'></div>
+ <br><br>
+ 
+ <h3 id='tituloCheckbox'></h3><br>
+ <div id='checkboxDiv'></div>
+ <br><br>
+ 
+
+ 
+ 
+ 
+  <input type='submit' value='Corregir'>
+ 
+ 
+</form>
+ 
+ 
+ 
+ <div id='resultadosDiv'></div>
+ </div>
 </body>
 </html>
