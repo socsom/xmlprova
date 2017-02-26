@@ -1,10 +1,10 @@
 //Definimos las variables donde se guardaran las respuestas y la nota y el conjunto del formulario
 var formElement=null;
-/*
-var respuesta1=null;
+
+//var respuesta1=null;
 var respuesta2=null;
-var respuesta3=[];
-*/
+/*var respuesta3=[];
+
 var respuesta4=null;
 /*
 var respuesta5=[];
@@ -26,13 +26,13 @@ window.onload = function(){
  formElement.onsubmit=function(){
  inicializar(); //al final del DOC
    
-   /*
-     corregir1();
+   
+   //  corregir1();
    corregir2();
-   corregir3();
-   */
+   /*corregir3();
+   
   corregir4();
-  /*
+  
    corregir5();
    corregir6(); 
    corregir7();
@@ -105,13 +105,12 @@ function ponerDatosRadio2Html(t,opt){
  var title2=xmlDoc.getElementsByTagName("title")[1].childNodes[0].nodeValue;
  ponerDatosInputHtml(title2);
  // FALTA GUARDAR LAS RESPUESTAS
- 
+ respuesta2=xmlDoc.getElementsByTagName("answer")[1].childNodes[0].nodeValue;
  // Ahora ponemos esos datos recuperados de titulos y opciones en el HTML con la siguiente funcion:
     
     function ponerDatosInputHtml(t){
  document.getElementById("title2").innerHTML = t;
 }
- 
       
   //*************************************************************************PREGUNTA 3***************************CHECKBOX
  //Recuperamos el título y las opciones, guardamos las respuestas correctas
@@ -350,7 +349,30 @@ function ponerDatosCheckbox2Html(t,opt){
 }   
        
    // termina la función gestionarXML
+ //CORRECCIONES************************************************************************************************************
+function corregir2(){
+  //Vosotros debéis comparar el texto escrito con el texto que hay en el xml
+  //en este ejemplo hace una comparación de números enteros
+  var s=formElement.elements[1].value;    
+  if (s==respuesta2) {
+   darRespuestaHtml("Pregunta 2: Correcto");
+   nota +=1;
+  }
+  else darRespuestaHtml("Pregunta 2: Incorrecto");
  
+}
+
+
+
+
+
+
+
+
+
+
+
+
 //****************************************************************************************************
 //Gestionar la presentación de las respuestas. La funcion darRespuestaHTML recoge uno a uno el resultado de las correcciones
 // y lo pone en el resultadosDiv del HTML
