@@ -1,81 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE questions SYSTEM "questions.dtd">
+
+<!DOCTYPE questions>
+
 <questions>
-	<question id="pregunta_001">
-		<type>radio</type>
-			<title>1.- ¿Qué etiqueta de HTML se emplea para definir una hoja de estilo interna?</title>
-				<option>css </option>
-				<option>link  </option>
-				<option>script </option>
-				<option>style </option>
-			<answer>3</answer>
-	</question>
+    <question id="profe_001">
+	<type>text</type>
+	<title>1. ¿Cuáles son las siglas de Cascading Style Sheets?</title>
+	<answer>CSS</answer>
+    </question>
+    <question id="profe_002">
+	<type>select</type>
+	<title>2. En un HTML ¿cuál es lugar correcto para definir una hoja de estilo externa?</title>
+	<option>No se puede</option>
+	<option>En la sección head</option>
+	<option>En la sección body</option>
+	<option>Al final del documento</option>
+	<answer>1</answer>
+    </question>
 	
+  	<question id="profe_003">
+	<type>text</type>
+	<title>3. ¿Cuáles son las siglas de eXtensible HyperText Markup Language?</title>
+	<answer>XHTML</answer> 
+</question>
 	
-	<question id="pregunta_002">
-		<type>text</type>
-			<title>2.- ¿Cuáles son las siglas de Cascading Style Sheets?</title>
-			<answer>CSS</answer>
-	</question>
-	
-	
-	<question id="pregunta_003">
-		<type>checkbox</type>
-			<title>3.- ¿Cuáles son operadores correctos en Javascript?</title>
-				<option>+=</option>
-				<option>=*</option>
-				<option>-=</option>
-				<option>=/</option>
-			<answer>0</answer>
-			<answer>2</answer>
-	</question>
-	
-	
-	<question id="pregunta_004">
+	<question id="profe_004">
 		<type>select</type>
-			<title>4.- En un HTML ¿cuál es lugar correcto para definir una hoja de estilo externa?</title>
-				<option>No se puede</option>
-				<option>En la sección head</option>
-				<option>En la sección body</option>
-				<option>Al final del documento</option>
-			<answer>1</answer>
+		<title>4. En CSS, ¿qué valor define el margen inferior en la siguiente regla?: {margin: 5px 10px 15px 20px;}</title>
+		<option>5px</option>
+		<option>10px</option>
+		<option>15px</option>
+		<option>20px</option>
+		<answer>2</answer>
 	</question>
-	
-	
-	<question id="pregunta_005">
-		<type>multiple</type>
-			<title>5.- ¿Dónde se puede insertar código JavaScript en un documento HTML?</title>
-				<option>En el head</option>
-				<option>En el body</option>
-				<option>No se puede introducir</option>
-				<option>Ninguna de las anteriores es correcta</option>
-		<answer>0</answer>
-		<answer>1</answer>
-	</question>
-	
-	
-	<question id="pregunta_006">
-		<type>radio</type>
-			<title>6.- ¿Qué significa DTD?</title>
-				<option>Dynamic Type Definition </option>
-				<option>Direct Type Definition </option>
-				<option>Document Type Definition</option>
-				<option>Las anteriores respuestas no son correctas </option>
-			<answer>2</answer>
-	</question>
-	
-	
-	<question id="pregunta_007">
-			<type>text</type>
-				<title>7.-¿Cuáles son las siglas de eXtensible HyperText Markup Language?</title>
-			<answer>XHTML</answer>
-	</question>
-	
-	
-	
-	<question id="pregunta_008">
+	<question id="profe_005">
 		<type>checkbox</type>
-			<title>8.- En Javascript ¿cuales són nombres de variables correctos?</title>
+			<title>5. En Javascript ¿cuales són nombres de variables correctos?</title>
 				<option>par3</option>
 				<option>1num</option>
 				<option>$money</option>
@@ -84,26 +44,20 @@
 			<answer>2</answer>
 	</question>
 	
+     <question id="profe_006">
+	<type>checkbox</type>
+	<title>6. ¿Cuáles son operadores correctos en Javascript?</title>
+	<option>+=</option>
+	<option>=*</option>
+	<option>-=</option>
+	<option>=/</option>
+	<answer>0</answer>
+	<answer>2</answer>
+    </question>
+   
+	 
 	
-	<question id="pregunta_009">
-		<type>select</type>
-			<title>9.- En CSS, ¿qué valor define el margen inferior en la siguiente regla?: {margin: 5px 10px 15px 20px;}</title>
-				<option>5px</option>
-				<option>10px</option>
-				<option>15px</option>
-				<option>20px</option>
-			<answer>2</answer>
-	</question>
+    
 	
 	
-	<question id="pregunta_010">
-		<type>multiple</type>
-			<title>10.-¿Qué propiedades NO existen en CSS?</title>
-				<option>border-color</option>
-				<option>border-border </option>
-				<option>border-style</option>
-				<option>border-background</option>
-			<answer>1</answer>
-			<answer>3</answer>
-	</question>
 </questions>
