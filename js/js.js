@@ -25,7 +25,7 @@ window.onload = function(){
  
   presentarNota();   
    return false;
- }
+ };
  
  //LEER XML de xml/preguntas.xml
  var xhttp = new XMLHttpRequest();
@@ -36,7 +36,7 @@ window.onload = function(){
  };
  xhttp.open("GET", "xml/preguntas.xml", true);
  xhttp.send();
-}
+};
 
 //****************************************************************************************************
 // Recuperamos los datos del fichero XML xml/preguntas.xml
@@ -258,7 +258,7 @@ function ponerDatosCheckboxHtml2(t,opt){
     label.setAttribute("for", "color_"+i);
     input.type="checkbox";
     input.name="color";
-    input.id="color_"+i;;    
+    input.id="color_"+i;   
     checkboxContainer.appendChild(input);
     checkboxContainer.appendChild(label);
  }  
@@ -277,7 +277,7 @@ function ponerDatosCheckboxHtml(t,opt){
     label.setAttribute("for", "color_"+i);
     input.type="checkbox";
     input.name="color";
-    input.id="color_"+i;;    
+    input.id="color_"+i;    
     checkboxContainer.appendChild(input);
     checkboxContainer.appendChild(label);
  }  
