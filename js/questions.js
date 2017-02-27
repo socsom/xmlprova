@@ -303,12 +303,3 @@ function inicializar(){
    nota=0.0;
 }
 //****************************************************************************************************************
-function reintentar() {
-	var btn = document.createElement("BUTTON");
-	var t = document.createTextNode("Reintentar");
-	btn.appendChild(t);
-	document.getElementById('resultadosDiv').appendChild(btn); 
-	btn.onclick =function(){
-	window.location.reload(true);
-	}
-}
