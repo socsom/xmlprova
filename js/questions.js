@@ -295,7 +295,7 @@ function darRespuestaHtml(r){
 
 function presentarNota(){
    darRespuestaHtml("Nota: "+nota+" puntos sobre 10");
-   reintentarBtn();
+   reintentar();
 }
 
 function inicializar(){
