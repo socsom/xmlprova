@@ -295,6 +295,7 @@ function darRespuestaHtml(r){
 
 function presentarNota(){
    darRespuestaHtml("Nota: "+nota+" puntos sobre 10");
+   reintentarBtn();
 }
 
 function inicializar(){
@@ -303,7 +304,11 @@ function inicializar(){
 }
 //****************************************************************************************************************
 function reintentar() {
-	
-	location.reload();
-	
+	var btn = document.createElement("BUTTON");
+	var t = document.createTextNode("Reintentar");
+	btn.appendChild(t);
+	document.getElementById('resultadosDiv').appendChild(btn); 
+	btn.onclick =function(){
+	window.location.reload(true);
 	}
+}
