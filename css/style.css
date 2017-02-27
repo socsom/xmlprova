@@ -41,10 +41,25 @@ body {
 #examen{
 	width:auto;
 	height:auto;
-	margin-left:5%;
-	margin-right:5%;
+	margin-left:15%;
+	margin-right:15%;
 	background-color:white;
 	clear:both;
 
+	
+}
+#resultadosDiv{
+	width: 50%;
+	height:50%;
+	position: absolute;
+    	left: 50%;
+   	top: 50%;
+   	transform: translate(-50%, -50%);
+	display: none;
+	background-color:#4993FA;
+	color:white;
+	text-align: center;
+	border-style: outset;
+	
 	
 }
